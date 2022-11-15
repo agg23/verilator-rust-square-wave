@@ -1,0 +1,15 @@
+[package]
+name = "square_wave_gen"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+build = "build.rs"
+
+[build-dependencies]
+verilator = { version = "0.1.6", features = ["gen", "module"] }
+
+[dependencies]
+hound = "3.5.0"
+verilated = "0.1.2"
+verilated-module = "0.1.1"
